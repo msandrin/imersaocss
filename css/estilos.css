@@ -6,10 +6,10 @@
 
 body{
     background-image: url('../img/fundo.jpg');
-     font-family: Arial;
-     background-size: auto 100vh;
-     height: 100vh;
-     font-size: 12px;
+    font-family: 'Source Code Pro', monospace;
+    background-size: auto 100vh;
+    height: 100vh;
+    font-size: 12px;
    }
 
 @media (min-width: 400px) {
@@ -69,18 +69,78 @@ align-items: center;
    .site-title{
      text-align: center;
      color: whitesmoke;
+     line-height: 1.8em;
    }
    
    .site-title{
      font-size: 4em;
+     font-family: 'Gloria Hallelujah', cursive;
    }
 
 
    .site-subtitle{
      font-style: italic;
+     font-family: 'Press Start 2P', cursive;
+     line-height: 1.8em;
    }
 
-   .img-portfolio{
-     width: 180px;
+
+.portfolio {
+    padding: 2em;
+    height: 100vh;
+}
+
+.portfolio h2{
+
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+  
+}
+
+@media (min-width : 560px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width : 860px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+    align-content:  center;
+    height: calc(100vh - 4em - 48px - 1.5em);
+  }
+}
+
+@media (min-width : 1200px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+  }
+}
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio{
+     width: 240px;
      height: 180px;
+     object-fit: cover;
+     object-position: left bottom;
    }
+
+@media (min-width: 1200px){
+  .img-portfolio{
+    width: 100%;
+    height: auto;
+  }
+
+
+}
