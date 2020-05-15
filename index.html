@@ -8,48 +8,127 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&family=Source+Code+Pro&display=swap"
 	rel="stylesheet">
+	<script src="https://kit.fontawesome.com/dea3af5fb5.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
 		<nav class="menu">
-			<ul>
+			<ul class="container">
 				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Projetos</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="#portfolio">Projetos</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
-		<div>
+		<div class="titulo">
 			<h1 class="site-title">Marcelo Sandrin</h1>
 			<h2 class="site-subtitle">jr. frontend developer</h2>
-			<h2 class="site-subtitle">sr. network support analyst</h2>
 		</div>
   </header>
-  <section class="portfolio">
-		<h2>Projetos</h2>
+<section class="sobre container">
+	<h2>Sobre</h2>
+	<figure class="avatar">
+		<img src="https://instagram.fcpq6-1.fna.fbcdn.net/v/t51.2885-19/s320x320/57488095_358842384977744_4498297365689532416_n.jpg?_nc_ht=instagram.fcpq6-1.fna.fbcdn.net&_nc_ohc=C28m4c9Q65oAX8XwI_f&oh=b23184c1e23701d90b0e50064dedfa6a&oe=5EE72575" alt="Marcelo Sandrin">
+	</figure>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor repellat beatae perferendis! Dignissimos, ducimus, laboriosam vitae animi veritatis aut atque et tempora sit maiores unde vel odio eos. Minus?
 
-		<div class="grid">
-			<figure>
-				<img class="img-portfolio" src="./img/alura.png" alt="Alura">
-				<figcaption>Alura</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/caelum.png" alt=">Caelum">
-				<figcaption>Caelum</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/hispters.png" alt="Hipsters.Tech">
-				<figcaption>Hipsters.Tech</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/likeaboss.png" alt="Like a Boss">
-				<figcaption>Like a Boss</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/hobby.png" alt="Handstand">
-				<figcaption>Handstand</figcaption>
-			</figure>
-		</div>
+	</p>
+	<p>
+		Quasi voluptas deserunt iste eligendi dolor maxime quas nemo repellendus, facilis fugit minus libero debitis incidunt consectetur beatae minima atque aperiam, non sint ad voluptatum nam aspernatur corporis. Itaque, earum.
+
+	</p>
+	<p>
+		In, fugit doloremque exercitationem consequuntur expedita omnis deleniti vero, sunt consectetur officia unde at dolore dicta. Hic ipsa minus possimus? Deleniti at sed repellat voluptas in exercitationem eligendi accusamus facere!
+
+	</p>
+	<p>
+		Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS</a> da Alura.
+	</p>
+</section>
+
+<section class="portfolio container" id="portfolio">
+	<h2>Projetos</h2>
+
+	<div class="grid">
 		
-	</section>
+	  <div class="flip-card">
+		<div class="card">
+		  <figure class="card-front">
+			<img class="img-portfolio" src="./img/alura.png" alt="Alura">
+		  </figure>
+		  <div class="card-back">
+			<h3>Alura</h3>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="flip-card">
+		<div class="card">
+		  <figure class="card-front">
+			<img class="img-portfolio" src="./img/caelum.png" alt="Caelum">
+		  </figure>
+		  <div class="card-back">
+			<h3>Caelum</h3>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="flip-card">
+		<div class="card">
+		  <figure class="card-front">
+			<img class="img-portfolio" src="./img/hispters.png" alt="Hipsters.Tech">
+		  </figure>
+		  <div class="card-back">
+					<h3>Hipsters.Tech</h3>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="flip-card">
+		<div class="card">
+		  <figure class="card-front">
+			<img class="img-portfolio" src="./img/likeaboss.png" alt="Like a Boss">
+		  </figure>
+		  <div class="card-back">
+			<h3>Like a Boss</h3>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="flip-card">
+		<div class="card">
+		  <figure class="card-front">
+			<img class="img-portfolio" src="./img/hobby.png" alt="Handstand">
+		  </figure>
+		<div class="card-back">
+		  <h3>Handstand</h3>
+		</div>
+	  </div>
+	</div>
+
+  </section>
+
+	<section class="contato container" id="contato">
+		<h2>Contato</h2>
+		  <div class="grid icons">
+		  <a target="_blank" href="https://github.com/msandrin/">
+			<i class="fab fa-github"></i>
+		  </a>
+		  <a target="_blank" href="https://twitter.com/somzeirapodcast">
+			<i class="fab fa-twitter"></i>
+		  </a>
+		  <a target="_blank" href="https://www.linkedin.com/in/marcelo-sandrin/">
+			<i class="fab fa-linkedin-in"></i>
+		  </a>
+		  <a target="_blank" href="https://www.instagram.com/msandrini/">
+			<i class="fab fa-instagram"></i>
+		  </a>
+		  <a href="mailto:msandrini@msn.com">
+			<i class="fas fa-envelope"></i>
+		  </a>
+		</div>
+	  </section>
+
+
 </body>
 </html>
